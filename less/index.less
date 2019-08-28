@@ -108,33 +108,6 @@ section {
   display: block;
 }
 
-// define my variables //
-
-@font-stack-nav: {
-  font-family: "Monda", sans-serif;
-  font-size: 40;
-  text-decoration: none;
-}
-
-
-
-//  //
-
-body {
-  line-height: 5;
-  display: flex;
-  justify-items: center;
-  align-items: baseline;
-
-  header {
-
-	nav {
-
-		@font-stack-nav();
-
-	}
-  }
-}
 ol,
 ul {
   list-style: none;
@@ -164,3 +137,38 @@ html,
 body {
   height: 100%;
 }
+
+// begin new CSS //
+// define my variables //
+
+@font-stack-nav: {
+	font-family: "Monda", sans-serif;
+	font-size: 40;
+	text-decoration: none;
+  }
+  
+  @color-magentaish: R=0 G=102 B=153;
+
+  @color-blackish: R=0 G=0 B=51;
+  
+  @color-whiteish: R=255 G=255 B=204;
+
+  @color-purpleish: R=153 G=51 B=102;
+
+  //  //
+  
+  body {
+	line-height: 5;
+	display: flex;
+	justify-items: center;
+	align-items: baseline;
+  
+	header {
+  
+	  nav {
+  
+		  @font-stack-nav();
+  
+	  }
+	}
+  }

@@ -104,17 +104,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 5;
-  display: flex;
-  justify-items: center;
-  align-items: baseline;
-}
-body header nav {
-  font-family: "Monda", sans-serif;
-  font-size: 40;
-  text-decoration: none;
-}
 ol,
 ul {
   list-style: none;
@@ -141,4 +130,15 @@ table {
 html,
 body {
   height: 100%;
+}
+body {
+  line-height: 5;
+  display: flex;
+  justify-items: center;
+  align-items: baseline;
+}
+body header nav {
+  font-family: "Monda", sans-serif;
+  font-size: 40;
+  text-decoration: none;
 }
