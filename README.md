@@ -10,8 +10,8 @@ For this project you will be building a digital resume from scratch. You will be
 - [+] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [+] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [+] Push commits: git push origin `<firstName-lastName>`.
- 
-Follow these steps for completing your project.
+
+<!-- Follow these steps for completing your project. -->
 
 - [+] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [+] Add your project manager as a reviewer on the pull-request

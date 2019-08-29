@@ -134,7 +134,7 @@ header nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  height: 15vh;
+  height: 12vh;
   width: 100%;
 }
 header nav a {
@@ -152,11 +152,11 @@ header nav a {
   width: 15%;
 }
 header nav a:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #131111;
+  color: #c4bfbf;
 }
 .top-box {
-  margin-top: 1%;
+  margin-top: 3vh;
   float: right;
   text-align: right;
   height: 330px;
@@ -169,11 +169,23 @@ header nav a:hover {
 }
 .top-box h1 {
   padding: 8%;
+  padding-bottom: 0%;
   font-size: 300%;
 }
 .top-box p {
   justify-self: flex-start;
   margin-right: 10%;
+}
+.top-box .contact-button {
+  text-decoration: none;
+  padding: 20px 45px;
+  background-color: #190e4e;
+  border-radius: 5px;
+  font-family: Montserrat, "sans-serif";
+  font-size: 13pt;
+  margin-top: 7%;
+  margin-right: 43%;
+  margin-bottom: 5%;
 }
 .offset-box {
   margin-left: 30%;
@@ -187,7 +199,66 @@ header nav a:hover {
 }
 .offset-box h2 {
   margin-left: 25px;
-  padding-top: 20px;
+  padding-top: 5%;
   width: 75%;
   font-size: 150%;
+}
+.top-half {
+  -left: 6%;
+  margin-top: 6%;
+  margin-left: 3%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.top-half p {
+  margin: 3% 2%;
+}
+.top-half .intro-main {
+  margin: 5% 0%;
+}
+.bottom-half {
+  display: flex;
+  border-bottom: 2px solid black;
+}
+.bottom-half #skills-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+.bottom-half #skills-main h2 {
+  font-size: 33pt;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+.bottom-half #skills-main ul {
+  list-style: disc outside none;
+  line-height: 300%;
+  font-size: 150%;
+  margin-left: 20%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+.bottom-half #work-history {
+  width: 45vw 
+  display: flex; 
+  flex-flow: row wrap; 
+  line-height: 250%;
+}
+.bottom-half #work-history h2 {
+  font-size: 33pt;
+  line-height: 130%;
+  margin-left: 15%;
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+.bottom-half #work-history ul {
+  list-style: disc outside none;
+  margin-left: 6%;
+}
+.bottom-half #work-history ul li {
+  margin-top: 4%;
 }
