@@ -141,9 +141,7 @@ body {
 // begin new CSS //
 // define variables //
 
-@font-stack: 'Monda', sans-serif, 'Roboto Mono;', monospace;
-
-@font-stack-alt: 'Roboto Mono', monospace, 'Monda', sans-serif; 
+@font-stack: Monda, "sans-serif";
 
 @color-magentaish: R=0 G=102 B=153;
 
@@ -153,47 +151,30 @@ body {
 
 @color-purpleish: R=153 G=51 B=102;
 
-@link-color: @color-magentaish;
-
-@link-color-hover: darken(@link-color, 20%);
-
 // Mixins //
 
+.top-box() {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Monda", sans-serif;
+  font-size: 40;
+  text-decoration: none;
+  line-height: 5;
+  justify-items: space-around;
+  align-items: baseline;
+}
 
-.nav-head() {
+.centered() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-align() {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-end;
+
 }
 
-.top-box() {
-	display: flex;
-	flex-flow: row wrap;
-	font-family: "Monda", sans-serif;
-	font-size: 40;
-	text-decoration: none;
-  }
-
-  .centered() {
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-  }
-
-// Nested CSS // 
-
-body {
-	line-height: 5;
-	display: flex;
-	justify-items: center;
-	align-items: baseline;
-  
-	header {
-  
-	  nav {
-		  .nav-head();
-		 font-family: @font-stack-nav;
-  
-	  }
-	}
-  }
+// Nested CSS //
