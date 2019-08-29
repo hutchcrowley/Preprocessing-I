@@ -83,15 +83,14 @@ time,
 mark,
 audio,
 video {
+  dislpay: flex;
+  flex-flow: row wrap;
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  text-align: center;
-  font-size: 50px;
-  border: 5px dotted green;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -107,9 +106,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol,
 ul {
   list-style: none;
@@ -122,7 +118,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -136,4 +132,21 @@ table {
 html,
 body {
   height: 100%;
+  font-family: Montserrat, "sans-serif";
+}
+header nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  height: 40px;
+  width: 100%;
+}
+header nav a {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 40;
+  text-decoration: none;
+  line-height: 5;
+  align-self: center;
+  width: 10%;
 }
