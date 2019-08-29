@@ -48,9 +48,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -143,7 +140,7 @@ header nav {
 header nav a {
   padding-left: 5%;
   padding-right: 4%;
-  padding-top: 4%;
+  padding-top: 3%;
   padding-bottom: 1%;
   display: flex;
   flex-flow: row wrap;
@@ -164,35 +161,33 @@ header nav a:hover {
   text-align: right;
   height: 330px;
   width: 550px;
-  background: #1e5799;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#e0e1e2', GradientType=1);
   /* IE6-9 */
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .top-box h1 {
   padding: 8%;
   font-size: 300%;
+}
+.top-box p {
+  justify-self: flex-start;
+  margin-right: 10%;
 }
 .offset-box {
   margin-left: 30%;
   margin-top: 14%;
   height: 330px;
   width: 550px;
-  background: #1e5799;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#e0e1e2', GradientType=1);
   /* IE6-9 */
+}
+.offset-box h2 {
+  margin-left: 25px;
+  padding-top: 20px;
+  width: 75%;
+  font-size: 150%;
 }
