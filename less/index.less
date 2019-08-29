@@ -85,7 +85,6 @@ time,
 mark,
 audio,
 video {
-  dislpay: flex;
   flex-flow: row wrap;
   margin: 0;
   padding: 0;
@@ -150,13 +149,17 @@ body {
 
 @font-stack: Arial, "sans-serif";
 
-@color-magentaish: R=0 G=102 B=153;
+@color-purpleish: #4a0396;
 
-@color-blackish: R=0 G=0 B=51;
+@color-blackish: #000000;
 
-@color-whiteish: R=255 G=255 B=204;
+@color-whiteish: #ffffff;
 
-@color-purpleish: R=153 G=51 B=102;
+@color-magentaish: #cc21aa;
+
+@tablet: ˜ "(max-width: 515px)";
+
+@phone: ` "(max-width: 400px)";
 
 // Mixins //
 
@@ -166,11 +169,12 @@ body {
   font-size: 40;
   text-decoration: none;
   line-height: 5;
+  justify-self: center;
   align-self: center;
-  width: 10%;
+  width: 15%;
 }
 
-.centered() {
+.center() {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,8 +187,24 @@ body {
 }
 
 .bordered() {
+  padding: 20px 0;
   border: 2px solid black;
-  display: flex;
+}
+
+.debug-border() {
+  border: 2px solid red;
+}
+
+.sexy-box() {
+
+height: 330px;
+width: 550px;
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(left,  #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #1e5799 0%,#207cca 0%,#2989d8 38%,#2989d8 38%,#e0e1e2 89%,#e0e1e2 89%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #1e5799 0%,#207cca 0%,#2989d8 38%,#2989d8 38%,#e0e1e2 89%,#e0e1e2 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e0e1e2',GradientType=1 ); /* IE6-9 */
+
 }
 
 // Nested CSS //
@@ -194,19 +214,39 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    height: 40px;
+    height: 15vh;
     width: 100%;
 
     a {
+      padding-left: 5%;
+      padding-right: 4%;
+      padding-top: 4%;
+      padding-bottom: 1%;
       .banner-box;
+      &:hover {
+        background-color: @color-blackish;
+        color: @color-whiteish;
+      }
     }
   }
 }
 
 .top-box {
+  margin-top: 1%;
+  float: right;
+  text-align: right;
+  .sexy-box();
+  opacity: .5;
 
-
-  
+  h1 {
+    padding: 8%;
+    font-size: 300%;
+  }
 }
 
+.offset-box {
+  margin-left: 30%;
+  margin-top: 14%;
+ .sexy-box();
+}
 
