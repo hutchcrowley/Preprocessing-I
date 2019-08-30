@@ -155,6 +155,12 @@ header nav a:hover {
   background-color: #131111;
   color: #c4bfbf;
 }
+@media ` "(max-width: 500px)" {
+  header {
+    flex-flow: colummn wrap;
+    justify-content: center;
+  }
+}
 .top-box {
   margin-top: 3vh;
   float: right;
@@ -243,9 +249,7 @@ header nav a:hover {
   margin-top: 5%;
 }
 .bottom-half #work-history {
-  width: 75vw;
-  display: flex; 
-  flex-flow: row wrap; 
+  width: 45vw display: flex; flex-flow: row wrap; justify-content: flex-start;;
   line-height: 250%;
 }
 .bottom-half #work-history h2 {

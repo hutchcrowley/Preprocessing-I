@@ -157,22 +157,19 @@ body {
 
 @tablet: ˜ "(max-width: 515px)";
 
-@phone: ` "(max-width: 500px)";
+@mobile: ` "(max-width: 500px)";
 
 // Mixins //
 
 .button() {
-
-
   text-decoration: none;
   padding: 20px 45px;
   background-color: @color-blueish;
   border-radius: 5px;
   font-family: @font-1;
   font-size: 13pt;
-
 }
- 
+
 .banner-box() {
   display: flex;
   flex-flow: row wrap;
@@ -214,9 +211,6 @@ body {
 .sexy-box() {
   height: 330px;
   width: 550px;
-  // background: #1e5799; /* Old browsers */
-  // background: -moz-linear-gradient(left,  #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%); /* FF3.6-15 */
-  // background: -webkit-linear-gradient(left,  #1e5799 0%,#207cca 0%,#2989d8 38%,#2989d8 38%,#e0e1e2 89%,#e0e1e2 89%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to right,
     #1e5799 0%,
@@ -239,11 +233,6 @@ header {
     height: 12vh;
     width: 100%;
 
-@media @mobile {
-flex-flow: colummn wrap
-  justify-content: center;
-}
-
     a {
       padding-left: 5%;
       padding-right: 4%;
@@ -255,6 +244,12 @@ flex-flow: colummn wrap
         color: @color-grayish;
       }
     }
+  }
+
+  @media @mobile {
+    flex-flow: colummn wrap;
+    justify-content: center;
+    
   }
 }
 
@@ -277,12 +272,10 @@ flex-flow: colummn wrap
   }
 
   .contact-button {
-
     .button();
     margin-top: 7%;
     margin-right: 43%;
     margin-bottom: 5%;
-    
   }
 }
 
@@ -317,8 +310,7 @@ flex-flow: colummn wrap
 }
 
 .bottom-half {
-
-display: flex;
+  display: flex;
   #skills-main {
     .right-justify();
     width: 100%;
@@ -339,8 +331,7 @@ display: flex;
   border-bottom: 2px solid black;
 
   #work-history {
-    width: 45vw
-    .left-justify();
+    width: 45vw .left-justify();
 
     line-height: 250%;
 
@@ -356,7 +347,7 @@ display: flex;
       list-style: disc outside none;
       margin-left: 6%;
       li {
-   margin-top: 4%;
+        margin-top: 4%;
       }
     }
   }
