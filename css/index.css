@@ -100,7 +100,7 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+  display: inline-block;
 }
 ol,
 ul {
@@ -127,21 +127,36 @@ table {
 }
 html,
 body {
-  height: 100%;
+  height: auto;
   font-family: Montserrat, "sans-serif";
 }
-header nav {
+.wrapper {
+  height: 1336px;
+  width: 1024px;
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  height: 12vh;
-  width: 100%;
+  flex-flow: row wrap;
 }
-header nav a {
+@media ` "(max-width: 500px)" {
+  .wrapper {
+    flex-flow: column wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+.wrapper header nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 15vh;
+  width: 1024px;
+}
+.wrapper header a {
   padding-left: 5%;
   padding-right: 4%;
   padding-top: 3%;
   padding-bottom: 1%;
+  margin-bottom: 4%;
   display: flex;
   flex-flow: row wrap;
   font-size: 40;
@@ -151,19 +166,19 @@ header nav a {
   align-self: center;
   width: 15%;
 }
-header nav a:hover {
+.wrapper header a:hover {
   background-color: #131111;
   color: #c4bfbf;
 }
 @media ` "(max-width: 500px)" {
-  header {
+  .wrapper {
     flex-flow: colummn wrap;
     justify-content: center;
   }
 }
 .top-box {
   margin-top: 3vh;
-  float: right;
+  justify-self: flex-start;
   text-align: right;
   height: 330px;
   width: 550px;
