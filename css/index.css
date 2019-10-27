@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -180,8 +180,8 @@ body {
   margin-top: 3vh;
   justify-self: flex-start;
   text-align: right;
-  height: 330px;
-  width: 550px;
+  height: 500px;
+  width: 700px;
   background: linear-gradient(to right, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#e0e1e2', GradientType=1);
@@ -200,7 +200,7 @@ body {
 .top-box .contact-button {
   text-decoration: none;
   padding: 20px 45px;
-  background-color: #190e4e;
+  background-color: #131111;
   border-radius: 5px;
   font-family: Montserrat, "sans-serif";
   font-size: 13pt;
@@ -211,8 +211,8 @@ body {
 .offset-box {
   margin-left: 30%;
   margin-top: 14%;
-  height: 330px;
-  width: 550px;
+  height: 500px;
+  width: 700px;
   background: linear-gradient(to right, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#e0e1e2', GradientType=1);

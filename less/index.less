@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -164,10 +164,15 @@ body {
 .button() {
   text-decoration: none;
   padding: 20px 45px;
-  background-color: @color-blueish;
-  border-radius: 5px;
+  background-color: #0000;
+  border-radius: 10px;
   font-family: @font-1;
   font-size: 13pt;
+  opacity: .95;
+  &:hover{
+    background-color:@color-grayish;
+  }
+
 }
 
 .banner-box() {
@@ -209,8 +214,8 @@ body {
 }
 
 .sexy-box() {
-  height: 330px;
-  width: 550px;
+  height: 500px;
+  width: 700px;
   background: linear-gradient(
     to right,
     #1e5799 0%,
@@ -220,8 +225,8 @@ body {
     #e0e1e2 89%,
     #e0e1e2 89%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e0e1e2',GradientType=1 ); /* IE6-9 */
-}
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e0e1e2',GradientType=1 ); /* IE6-9 */}  border: 2px solid black;
+
 
 // Nested CSS //
 
@@ -244,9 +249,13 @@ margin-right: 2%;
 header {
   nav {
     display: flex;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     height: 15vh;
     width: 1024px
+    flex-grow: grow;
+    white-space: nowrap;
+
 
   }
     a {
@@ -255,11 +264,10 @@ header {
       padding-top: 3%;
       padding-bottom: 1%;
       margin-bottom: 4%;
-      .banner-box;
-      &:hover {
-        background-color: @color-blackish;
-        color: @color-grayish;
-      }
+    white-space: nowrap;
+
+color: #ffff
+text-decoration: none;
     }
   }
 
@@ -268,7 +276,7 @@ header {
   @media @mobile {
     flex-flow: colummn wrap;
     justify-content: center;
-    
+
   }
 }
 
@@ -280,6 +288,7 @@ header {
   text-align: right;
   .sexy-box();
   opacity: 0.8;
+
 
   h1 {
     padding: 8%;
@@ -304,6 +313,7 @@ header {
   margin-left: 30%;
   margin-top: 14%;
   .sexy-box();
+  border-radius: 20px;
 
   h2 {
     margin-left: 25px;
