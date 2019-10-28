@@ -211,8 +211,8 @@ body {
 }
 
 .bordered() {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .debug-border() {
@@ -293,13 +293,12 @@ header {
 }
 
 .wrapper {
-  height: auto;
+  height: 43s;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   background-image: url('../Assets/Images/IMG_4971.jpeg');
   background-size: percentage(1.8%);
-  background-position-y: percentages(.53);
   opacity: .9;
   background-color: #000000;
   background-repeat: no-repeat;
@@ -393,12 +392,12 @@ header {
   }
 
   .top-half {
-
+    display: flex;
     margin-top: 30%;
     padding-left: 4%;
     padding-right: 4%;
-    .left-justify();
-
+    text-align: justify;
+    background-color: #000000;
     .bordered();
 
     .intro-main {
@@ -411,10 +410,14 @@ header {
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 200px;
+    background-color: #000000;
+    text-align: center;
+    justify-content: center;
+    ;
 
     #skills-main {
-      text-align: center;
-      width: 100%;
+      width: 23%;
+      margin-top: 5%;
 
       h2 {
         font-size: 33pt;
@@ -424,33 +427,34 @@ header {
         list-style: disc outside none;
         line-height: 300%;
         font-size: 150%;
-        margin-left: 20%;
         margin-right: 5%;
         margin-top: 5%;
+
       }
     }
 
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(255, 255, 255);
 
     #work-history {
-      width: 45vw .left-justify();
+      display: flex;
+      justify-content: center;
 
       line-height: 250%;
 
       h2 {
         font-size: 33pt;
         line-height: 130%;
-        margin-left: 15%;
-        margin-bottom: 4%;
+
+        margin-bottom: 1%;
         margin-top: 2%;
       }
 
       ul {
         list-style: disc outside none;
-        margin-left: 6%;
 
         li {
           margin-top: 4%;
+          line-height: 20px;
         }
       }
     }
