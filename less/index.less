@@ -138,7 +138,7 @@ table {
 
 html,
 body {
-  height: 1400px;
+  height: 1500px;
   font-family: @font-1;
 }
 
@@ -272,6 +272,9 @@ header {
         }
       }
 
+      @media screen and (max-width: 750px) {
+        width: 20%;
+      }
 
       @media screen and (max-width: 550px) {
         display: flex;
@@ -282,12 +285,7 @@ header {
 
     }
 
-    @media screen and (max-width: 550px) {
-      flex-flow: column nowrap;
-      margin: 0;
-      text-align: center;
-      height: 300px;
-    }
+
   }
 
 }
@@ -305,10 +303,8 @@ header {
   color: #ffffff;
 
   p {
-    margin: 3% 2%;
+    margin-top: 3%;
   }
-
-  @media screen and (max-width: 768px) {}
 
   // mobile break-point.
 
@@ -318,6 +314,7 @@ header {
     width: 100%;
     margin-top: 200px;
   }
+
 
   // lower header styling
 
@@ -329,32 +326,39 @@ header {
     .center();
     .sexy-box();
     opacity: .9;
-    position: center;
+    color: #000000;
+    padding-bottom: 5%;
+    padding-top: 5%;
     z-index: 2;
-    padding-bottom: 80px;
     filter: drop-shadow(8px 8px 10px #000000);
+    white-space: nowrap;
 
     h1 {
-      padding: 8%;
+      padding: %;
       padding-bottom: 0%;
-      font-size: 300%;
+      font-size: 250%;
+      opacity: 1;
     }
 
     p {
       justify-self: flex-start;
       margin-right: 10%;
+      font-size: 25px;
     }
 
     @media screen and (max-width: 750px) {
-      margin: 3%;
-      width: 95%;
+      margin-left: 0%;
+
+      width: 100%;
     }
 
     @media screen and (max-width: 550px) {
       margin: 0;
       width: 100%;
-      transform: scale(1);
-      height: auto;
+      height: 500px;
+      border-radius: 0px;
+
+
     }
 
     .contact-button {
@@ -367,7 +371,8 @@ header {
   .offset-box {
     margin-left: 45%;
     margin-top: 13%;
-    padding-right: 10%;
+    padding-right: 8%;
+    padding-bottom: 8%;
     .sexy-box();
     position: absolute;
     z-index: 1;
@@ -375,117 +380,142 @@ header {
     display: flex;
     align-content: flex-end;
     justify-content: flex-end;
+    box-sizing: border-box;
+    perspective: 50px;
+
+    #icon-image {
+      box-sizing: border-box;
+      transform: scale(.25);
+
+    }
 
     filter: drop-shadow(8px 8px 10px #000000);
 
     h2 {
-      font-size: 130%;
+      font-size: 32px;
       opacity: 1;
       margin-bottom: 20%;
-      color: #000000
-    }
+      color: #000000;
+      font-weight: 20px;
 
+    }
 
     @media screen and (max-width: 1200px) {
       display: none;
     }
+
   }
 
   .top-half {
-    display: flex;
-    margin-top: 30%;
-    padding-left: 4%;
-    padding-right: 4%;
-    text-align: justify;
-    background-color: #000000;
-    .bordered();
 
-    .intro-main {
-      margin: 5% 0%;
+    background-color: #000000;
+    margin-top: 19%;
+
+    #intro-main {
+      display: flex;
+      text-align: left;
+      padding: 5% 22% 8% 10%;
+      font-size: 15px;
+
+      p {
+        line-height: 30px;
+        font-size: 17px;
+      }
     }
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    @media and screen (max-width: 750px) {
+      margin-top: 0;
+    }
+
   }
 
   .bottom-half {
-    display: flex;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     background-color: #000000;
     text-align: center;
+    display: flex;
     justify-content: center;
-    ;
 
-    #skills-main {
-      width: 23%;
-      margin-top: 5%;
-
-      h2 {
-        font-size: 33pt;
-      }
-
-      ul {
-        list-style: disc outside none;
-        line-height: 300%;
-        font-size: 150%;
-        margin-right: 5%;
-        margin-top: 5%;
-
-      }
+    p {
+      font-size: 18px;
     }
 
-    border-bottom: 2px solid rgb(255, 255, 255);
+
+    h2 {
+      font-size: 30pt;
+    }
+
+    ul {
+      list-style: disc outside none;
+      line-height: 30px;
+      font-size: 150%;
+      margin-top: 5%;
+
+    }
+
+    #skills-main {
+
+      height: 45%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-flow: column nowrap;
+      border-left: 2px solid white;
+      padding-right: 35%;
+      padding-left: 3%;
+
+      li {
+        margin-top: 5%;
+      }
+
+    }
 
     #work-history {
       display: flex;
-      justify-content: center;
-
-      line-height: 250%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      border-top: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      padding: 5% 15% 5% 4%;
+      font-size: 14px;
 
       h2 {
-        font-size: 33pt;
-        line-height: 130%;
+        margin-left: 45%;
 
-        margin-bottom: 1%;
+      }
+
+      li {
+        line-height: 25px;
         margin-top: 2%;
       }
-
-      ul {
-        list-style: disc outside none;
-
-        li {
-          margin-top: 4%;
-          line-height: 20px;
-        }
-      }
     }
+
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 10%;
+
+  #insta {
+    margin: 5% 0%;
+    transform: scale(.5);
   }
 
-  footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    #insta {
-      margin: 5% 1%;
-      transform: scale(.7);
-      filter: grayscal(100%);
-    }
-
-    #linkedin {
-      margin: 5% 1%;
-      transform: scale(.7);
-      filter: grayscal(100%);
-    }
-
-    #twitter {
-      margin: 5% 1%;
-      transform: scale(.7);
-      filter: grayscal(100%);
-    }
-
-
+  #linkedin {
+    margin: 5% 0%;
+    transform: scale(.5);
 
   }
 
-
+  #twitter {
+    margin: 5% 0%;
+    transform: scale(.5);
+  }
 }
