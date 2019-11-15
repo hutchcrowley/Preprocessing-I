@@ -113,7 +113,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -127,23 +127,22 @@ table {
 html,
 body {
   height: 1500px;
-  font-family: Montserrat, 'sans-serif';
+  font-family: Montserrat, "sans-serif";
 }
 header {
-  height: 95px;
+  height: 100px;
 }
 header nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  height: 100px;
+  height: 105px;
   width: 100%;
   position: fixed;
   background-color: #190e4e;
   z-index: 3;
 }
 header nav .nav-item {
-  height: 100%;
   width: 12%;
   display: flex;
   align-content: center;
@@ -162,15 +161,25 @@ header nav .nav-item:hover {
 header nav .nav-item:hover a {
   color: black;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   header nav .nav-item {
-    width: 20%;
+    width: 15%;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   header nav .nav-item {
-    display: flex;
+    width: 100%;
+    border-bottom: 1px dashed #535de9;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  header nav {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header nav {
     width: 100%;
     border-bottom: 2px solid white;
   }
@@ -178,30 +187,57 @@ header nav .nav-item:hover a {
 .wrapper {
   height: 43s;
   width: 100%;
+  color: #ffffff;
+  background-color: #131111;
   display: flex;
   flex-flow: row wrap;
-  background-image: url('../Assets/Images/IMG_4971.jpeg');
-  background-size: 180%;
-  opacity: 0.9;
-  background-color: #000000;
-  background-repeat: no-repeat;
-  color: #ffffff;
 }
 .wrapper p {
   margin-top: 3%;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .wrapper {
-    flex-flow: colummn wrap;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
-    margin-top: 200px;
   }
 }
-.wrapper .top-box {
+@media screen and (max-width: 800px) {
+  .wrapper {
+    flex-flow: colummn wrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.wrapper .boxes-container {
   margin-top: 5%;
-  margin-left: 13%;
-  justify-self: flex-start;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background-image: url("../Assets/Images/IMG_4971.jpeg");
+  background-size: cover;
+  background-position: center;
+  transform: opacity(0.8);
+  background-color: #131111;
+  background-repeat: norepeat;
+}
+@media screen and (max-width: 800px) {
+  .wrapper .boxes-container {
+    width: 100%;
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.wrapper .boxes-container .top-box {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 7%;
+  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,57 +250,55 @@ header nav .nav-item:hover a {
   color: #000000;
   padding-bottom: 5%;
   padding-top: 5%;
-  z-index: 2;
+  z-index: 3;
   filter: drop-shadow(8px 8px 10px #000000);
   white-space: nowrap;
 }
-.wrapper .top-box h1 {
-  padding: %;
+.wrapper .boxes-container .top-box h1 {
   padding-bottom: 0%;
   font-size: 250%;
   opacity: 1;
 }
-.wrapper .top-box p {
-  justify-self: flex-start;
-  margin-right: 10%;
+.wrapper .boxes-container .top-box p {
+  align-self: center;
   font-size: 25px;
 }
-@media screen and (max-width: 750px) {
-  .wrapper .top-box {
-    margin-left: 0%;
+@media screen and (max-width: 800px) {
+  .wrapper .boxes-container .top-box {
+    margin: 20% auto;
+    height: auto;
     width: 100%;
   }
 }
-@media screen and (max-width: 550px) {
-  .wrapper .top-box {
-    margin: 0;
+@media screen and (max-width: 60px) {
+  .wrapper .boxes-container .top-box {
     width: 100%;
     height: 500px;
     border-radius: 0px;
   }
 }
-.wrapper .top-box .contact-button {
+.wrapper .boxes-container .top-box .contact-button {
   text-decoration: none;
   padding: 20px 45px;
   background-color: #131111;
   border-radius: 10px;
-  font-family: Montserrat, 'sans-serif';
+  font-family: Montserrat, "sans-serif";
   font-size: 13pt;
   opacity: 0.95;
   margin: 5% 35%;
 }
-.wrapper .top-box .contact-button a {
+.wrapper .boxes-container .top-box .contact-button a {
   text-decoration: none;
   color: #c4bfbf;
 }
-.wrapper .top-box .contact-button:hover {
+.wrapper .boxes-container .top-box .contact-button:hover {
   background-color: #c4bfbf;
 }
-.wrapper .offset-box {
+.wrapper .boxes-container .offset-box {
   margin-left: 45%;
   margin-top: 13%;
   padding-right: 8%;
-  padding-bottom: 8%;
+  padding-top: 20%;
   height: 550px;
   width: 750px;
   background: linear-gradient(to right, #1e5799 0%, #207cca 0%, #2989d8 38%, #2989d8 38%, #e0e1e2 89%, #e0e1e2 89%);
@@ -280,25 +314,32 @@ header nav .nav-item:hover a {
   perspective: 50px;
   filter: drop-shadow(8px 8px 10px #000000);
 }
-.wrapper .offset-box #icon-image {
-  box-sizing: border-box;
-  transform: scale(0.25);
+.wrapper .boxes-container .offset-box .profile-pic {
+  margin-top: 10%;
+  background-repeat: no-repeat;
+  padding: 30%;
+  position: sticky;
+  transform: scale(0.6);
+  opacity: 1;
+  background-image: #131111;
+  background-image: url('../Assets/Good-Selfie.jpg');
+  border: 2px solid #190e4e;
 }
-.wrapper .offset-box h2 {
+.wrapper .boxes-container .offset-box h2 {
   font-size: 32px;
   opacity: 1;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
   color: #000000;
-  font-weight: 20px;
+  font-weight: 24px;
 }
-@media screen and (max-width: 1200px) {
-  .wrapper .offset-box {
+@media screen and (max-width: 800px) {
+  .wrapper .boxes-container .offset-box {
     display: none;
   }
 }
 .wrapper .top-half {
   background-color: #000000;
-  margin-top: 19%;
+  margin-top: 5%;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }
@@ -373,14 +414,14 @@ footer {
   height: 10%;
 }
 footer #insta {
-  margin: 5% 0%;
-  transform: scale(0.5);
+  margin: 4% 0%;
+  transform: scale(0.3);
 }
 footer #linkedin {
-  margin: 5% 0%;
-  transform: scale(0.5);
+  margin: 4% 0%;
+  transform: scale(0.3);
 }
 footer #twitter {
-  margin: 5% 0%;
-  transform: scale(0.5);
+  margin: 4% 0%;
+  transform: scale(0.3);
 }
